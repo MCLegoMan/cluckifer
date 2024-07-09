@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.mclegoman.cluckifer.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+	  "ChickenEntityMixin"
+  ],
+  "client": [
+	  "LayerDefinitionsMixin",
+	  "ModelLayersAccessor",
+	  "ChickenEntityRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

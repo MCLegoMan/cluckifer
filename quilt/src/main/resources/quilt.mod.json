@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "quilt_loader": {
+    "group": "${group}",
+    "id": "cluckifer",
+    "version": "${version}",
+    "metadata": {
+      "name": "Cluckifer",
+      "description": "Turns chickens hostile...",
+      "contributors": {
+        "MCLegoMan": "Author"
+      },
+      "contact": {
+        "homepage": "https://github.com/MCLegoMan/cluckifer",
+        "issues": "https://github.com/MCLegoMan/cluckifer/issues",
+        "sources": "https://github.com/MCLegoMan/cluckifer/"
+      },
+      "icon": "assets/cluckifer/icon.png"
+    },
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "entrypoints": {
+      "client_init": [
+        "com.mclegoman.cluckifer.client.ClientMainQuilt"
+      ]
+    },
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "version": "*"
+      },
+      {
+        "id": "quilt_base",
+        "version": "*"
+      },
+      {
+        "id": "minecraft",
+        "version": "~1.21"
+      }
+    ]
+  },
+  "mixin": [
+    "cluckifer.mixins.json"
+  ]
+}

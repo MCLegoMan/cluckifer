@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "cluckifer",
+  "version": "${version}",
+  "name": "Cluckifer",
+  "description": "Turns chickens hostile...",
+  "authors": [
+    "MCLegoMan"
+  ],
+  "contact": {
+    "homepage": "https://github.com/MCLegoMan/cluckifer",
+    "issues": "https://github.com/MCLegoMan/cluckifer/issues",
+    "sources": "https://github.com/MCLegoMan/cluckifer/"
+  },
+  "license": "LGPL-3.0-or-later",
+  "icon": "assets/cluckifer/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.mclegoman.cluckifer.client.ClientMainFabric"
+    ]
+  },
+  "mixins": [
+    "cluckifer.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": "~1.21"
+  }
+}

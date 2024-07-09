@@ -1,0 +1,30 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+issueTrackerURL = "https://github.com/MCLegoMan/cluckifer/issues"
+license = "LGPL-3.0-or-later"
+
+[[mods]]
+modId = "cluckifer"
+version = "${version}"
+displayName = "Cluckifer"
+displayURL = "https://github.com/MCLegoMan/cluckifer"
+logoFile = "icon.png"
+authors = "MCLegoMan"
+description = '''Turns chickens hostile...'''
+
+[[dependencies.fleecifer]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.fleecifer]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[mixins]]
+config = "fleecifer.mixins.json"
